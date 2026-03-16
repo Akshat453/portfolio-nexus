@@ -1,26 +1,596 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Talele | Portfolio</title>
+    <meta name="description" content="Digital portfolio of Yash Talele – B.Tech Chemical Engineering student at PDEU, showcasing academic achievements, projects, skills and leadership.">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#cover">YT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#cover">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#global">Global Awareness</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#future">Future</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Cover Section -->
+    <section id="cover" class="cover-section">
+        <div class="container text-center">
+            <div class="profile-img-wrapper" data-aos="zoom-in" data-aos-duration="800">
+                <img src="public/images/profile.png" alt="Yash Talele" class="profile-img">
+            </div>
+            <h1 class="cover-name" data-aos="fade-up" data-aos-delay="200">Yash Talele</h1>
+            <p class="cover-program" data-aos="fade-up" data-aos-delay="350">B.Tech in Chemical Engineering</p>
+            <p class="cover-institution" data-aos="fade-up" data-aos-delay="450">Pandit Deendayal Energy University, Gujarat</p>
+            <p class="cover-date" data-aos="fade-up" data-aos-delay="550">Portfolio Submission — 2026</p>
+            <p class="cover-tagline" data-aos="fade-up" data-aos-delay="650">"Engineering sustainable solutions at the intersection of chemistry, data, and purpose."</p>
+            <a href="#philosophy" class="btn btn-accent mt-4" data-aos="fade-up" data-aos-delay="750">Explore Portfolio <i class="bi bi-arrow-down"></i></a>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Table of Contents -->
+    <section id="toc" class="section-padding bg-surface">
+        <div class="container narrow-container">
+            <h2 class="section-title" data-aos="fade-up">Table of Contents</h2>
+            <div class="toc-grid" data-aos="fade-up" data-aos-delay="100">
+                <a href="#philosophy" class="toc-item"><span class="toc-num">01</span><span>Introduction &amp; Learning Philosophy</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#resume" class="toc-item"><span class="toc-num">02</span><span>Resume / CV</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#projects" class="toc-item"><span class="toc-num">03</span><span>Interdisciplinary Projects &amp; Research</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#skills" class="toc-item"><span class="toc-num">04</span><span>Advanced Skill Development &amp; Mastery</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#leadership" class="toc-item"><span class="toc-num">05</span><span>Collaborative &amp; Leadership Experiences</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#global" class="toc-item"><span class="toc-num">06</span><span>Global Awareness &amp; Ethical Considerations</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#future" class="toc-item"><span class="toc-num">07</span><span>Future Aspirations &amp; Professional Development</span><i class="bi bi-arrow-right"></i></a>
+                <a href="#contact" class="toc-item"><span class="toc-num">08</span><span>Contact</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction & Learning Philosophy -->
+    <section id="philosophy" class="section-padding">
+        <div class="container narrow-container">
+            <h2 class="section-title" data-aos="fade-up">Introduction &amp; Learning Philosophy</h2>
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="100">
+                <p>I am Yash Talele, a Chemical Engineering undergraduate at Pandit Deendayal Energy University, Gandhinagar. My academic journey has been shaped by a deep curiosity about how scientific principles translate into real-world impact — from industrial processes to sustainability initiatives.</p>
+                <p>My learning philosophy rests on three pillars:</p>
+                <ul class="philosophy-list">
+                    <li><strong>Interdisciplinary Thinking</strong> — I believe the most meaningful innovations emerge at the crossroads of multiple disciplines. My work spans process engineering, data analysis, sustainability research, and management.</li>
+                    <li><strong>Learning by Doing</strong> — Whether it's optimizing a chemical plant's operations during an internship or leading a 60-member student chapter, I prioritize hands-on experience over passive consumption of knowledge.</li>
+                    <li><strong>Purpose-Driven Engineering</strong> — Every skill I develop and every project I undertake is guided by the question: <em>"How does this contribute to a more sustainable and equitable world?"</em></li>
+                </ul>
+                <p>These values have guided me from my early education in Jalgaon, Maharashtra, through competitive examinations, to my current role as a research-oriented engineering student committed to continuous growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume / CV -->
+    <section id="resume" class="section-padding bg-surface">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Resume / CV</h2>
+
+            <h3 class="subsection-title" data-aos="fade-up"><i class="bi bi-mortarboard"></i> Education</h3>
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 – 2027</div>
+                    <div class="card-neo">
+                        <h4>Pandit Deendayal Energy University, Gujarat</h4>
+                        <p>Bachelor of Technology in Chemical Engineering (B.Tech)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 – 2023</div>
+                    <div class="card-neo">
+                        <h4>Chhatrapati Shivaji Junior College, Jalgaon</h4>
+                        <p>Maharashtra State Board (MSBSHSE)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2011 – 2021</div>
+                    <div class="card-neo">
+                        <h4>Kashinath Palod Public School, Jalgaon</h4>
+                        <p>Central Board of Secondary Education (CBSE)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title" data-aos="fade-up"><i class="bi bi-briefcase"></i> Work Experience</h3>
+            <div class="timeline" data-aos="fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-date">June – July 2025</div>
+                    <div class="card-neo">
+                        <h4>Research Intern — IIM Mumbai</h4>
+                        <ul>
+                            <li>Conducted research on sustainability and management-focused projects under faculty guidance.</li>
+                            <li>Assisted with data analysis, report preparation, and literature reviews.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2024 – Jan 2025</div>
+                    <div class="card-neo">
+                        <h4>Process Engineering Intern — Benzo Chem Industries</h4>
+                        <ul>
+                            <li>Supported process optimization and industrial safety management.</li>
+                            <li>Gained exposure to PLC, SAP, and EHS systems.</li>
+                            <li>Collaborated with cross-functional teams on process improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">June – July 2024</div>
+                    <div class="card-neo">
+                        <h4>Process Engineering Intern — ACME Sujan Chemicals</h4>
+                        <ul>
+                            <li>Worked on production processes involving Pyridine Hydrochloride and Triethyl Ammonium Chloride.</li>
+                            <li>Assisted in plant operations and quality monitoring.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title" data-aos="fade-up"><i class="bi bi-tools"></i> Skills</h3>
+            <div class="row g-4" data-aos="fade-up">
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4>Software &amp; Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MS Excel Advanced</span>
+                            <span class="skill-tag">ASPEN</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">SAP</span>
+                            <span class="skill-tag">AutoCAD</span>
+                            <span class="skill-tag">SOLIDWORKS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4>Laboratory &amp; Analytical</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GC</span>
+                            <span class="skill-tag">HPLC</span>
+                            <span class="skill-tag">UV/Vis</span>
+                            <span class="skill-tag">NMR</span>
+                            <span class="skill-tag">Spectroscopy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4>Industry Knowledge</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Process Engineering</span>
+                            <span class="skill-tag">EHS</span>
+                            <span class="skill-tag">Process Optimization</span>
+                            <span class="skill-tag">Carbon Capture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4>Professional &amp; Soft Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Strategy</span>
+                            <span class="skill-tag">Public Speaking</span>
+                            <span class="skill-tag">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title" data-aos="fade-up"><i class="bi bi-trophy"></i> Achievements</h3>
+            <div class="row g-4" data-aos="fade-up">
+                <div class="col-md-4">
+                    <div class="card-neo text-center achievement-card">
+                        <div class="achievement-icon"><i class="bi bi-1-circle"></i></div>
+                        <h4>1st Place</h4>
+                        <p>National Hackathon for Chemical Engineers, Nirma University — youngest team to win among 20 selected teams nationwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-neo text-center achievement-card">
+                        <div class="achievement-icon"><i class="bi bi-2-circle"></i></div>
+                        <h4>2nd Runner-up</h4>
+                        <p>Chem-O-Clave, PDEU — among 60 competing teams nationwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-neo text-center achievement-card">
+                        <div class="achievement-icon"><i class="bi bi-3-circle"></i></div>
+                        <h4>3rd Place</h4>
+                        <p>ChemFuge 5.0, PDEU — out of 25 participating department-wide teams.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2" data-aos="fade-up">
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4><i class="bi bi-patch-check"></i> Certifications</h4>
+                        <ul>
+                            <li>MS Excel Advanced (12 weeks)</li>
+                            <li>Pharma Analytical Instruments (8 weeks)</li>
+                            <li>Strategy Management (12 weeks)</li>
+                            <li>Sustainability &amp; LCA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-neo">
+                        <h4><i class="bi bi-heart"></i> Hobbies &amp; Interests</h4>
+                        <ul>
+                            <li>Reading research papers on green chemistry</li>
+                            <li>Playing chess &amp; badminton</li>
+                            <li>Exploring new technologies</li>
+                            <li>Volunteering for community initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interdisciplinary Projects & Research -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Interdisciplinary Projects &amp; Research</h2>
+
+            <div class="card-neo project-card" data-aos="fade-up">
+                <div class="project-header">
+                    <span class="project-label">Project 01</span>
+                    <h3>Carbon Capture Efficiency using Ionic Liquids &amp; DES Blends</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5>Objective</h5>
+                        <p>To evaluate and optimize CO₂ capture efficiency using ionic liquids and deep eutectic solvent (DES) blends through NMR-based molecular interaction studies.</p>
+                        <h5>Methodology</h5>
+                        <ul>
+                            <li>NMR spectroscopy to analyze molecular interactions and solubility parameters</li>
+                            <li>Comparative analysis of ionic liquid-DES blends vs. conventional amine solvents</li>
+                            <li>Energy efficiency assessment and thermodynamic modeling</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Outcomes &amp; Innovations</h5>
+                        <ul>
+                            <li>Identified promising IL-DES combinations with superior CO₂ absorption capacity</li>
+                            <li>Demonstrated lower regeneration energy requirements compared to MEA baselines</li>
+                            <li>Results contribute to greener carbon capture technologies</li>
+                        </ul>
+                        <h5>Challenges &amp; Solutions</h5>
+                        <p>Interpreting complex NMR spectra required iterative refinement of experimental conditions and close collaboration with faculty advisors and analytical lab teams.</p>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">NMR</span>
+                    <span class="skill-tag">Carbon Capture</span>
+                    <span class="skill-tag">Sustainability</span>
+                    <span class="skill-tag">Green Chemistry</span>
+                </div>
+            </div>
+
+            <div class="card-neo project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-header">
+                    <span class="project-label">Project 02</span>
+                    <h3>Process Optimization at Benzo Chem Industries</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5>Objective</h5>
+                        <p>Optimize industrial chemical processes while enhancing safety protocols and EHS compliance.</p>
+                        <h5>Methodology</h5>
+                        <ul>
+                            <li>PLC-based automation and SAP integration for process monitoring</li>
+                            <li>Root-cause analysis of process bottlenecks</li>
+                            <li>Cross-functional team collaboration for continuous improvement</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Outcomes</h5>
+                        <ul>
+                            <li>Identified key process inefficiencies and proposed corrective measures</li>
+                            <li>Enhanced understanding of EHS management in a live industrial setting</li>
+                            <li>Developed business-process integration skills via SAP exposure</li>
+                        </ul>
+                        <h5>Challenges &amp; Solutions</h5>
+                        <p>Adapting academic theory to industrial constraints required rapid learning and mentorship from senior process engineers.</p>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">Process Engineering</span>
+                    <span class="skill-tag">SAP</span>
+                    <span class="skill-tag">EHS</span>
+                    <span class="skill-tag">PLC</span>
+                </div>
+            </div>
+
+            <div class="card-neo project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-header">
+                    <span class="project-label">Project 03</span>
+                    <h3>Sustainability Research at IIM Mumbai</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5>Objective</h5>
+                        <p>Contribute to management-focused sustainability research under the guidance of IIM Mumbai faculty.</p>
+                        <h5>Methodology</h5>
+                        <ul>
+                            <li>Systematic literature review and meta-analysis</li>
+                            <li>Data analysis using quantitative and qualitative methods</li>
+                            <li>Report preparation and academic writing</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Outcomes</h5>
+                        <ul>
+                            <li>Co-authored research contributions bridging engineering and management perspectives</li>
+                            <li>Developed rigorous academic writing and data interpretation skills</li>
+                            <li>Gained exposure to interdisciplinary research culture at a premier institution</li>
+                        </ul>
+                        <h5>Challenges &amp; Solutions</h5>
+                        <p>Bridging the gap between engineering and management research paradigms required open-mindedness and proactive engagement with diverse research methodologies.</p>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="skill-tag">Sustainability</span>
+                    <span class="skill-tag">Research</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">IIM Mumbai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Skill Development & Mastery -->
+    <section id="skills" class="section-padding bg-surface">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Advanced Skill Development &amp; Mastery</h2>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="card-neo skill-mastery-card">
+                        <div class="skill-mastery-icon"><i class="bi bi-cpu"></i></div>
+                        <h4>Technical Proficiency</h4>
+                        <p>Proficient in process simulation tools (ASPEN, MATLAB), CAD software (AutoCAD, SOLIDWORKS), and data analysis (MS Excel Advanced).</p>
+                        <div class="skill-artifact">
+                            <code>// MATLAB: Reaction kinetics simulation<br>
+k = 0.05; Ca0 = 1.0; t = 0:0.1:50;<br>
+Ca = Ca0 * exp(-k * t);<br>
+plot(t, Ca); xlabel('Time'); ylabel('[A]');</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-neo skill-mastery-card">
+                        <div class="skill-mastery-icon"><i class="bi bi-droplet-half"></i></div>
+                        <h4>Analytical &amp; Laboratory Skills</h4>
+                        <p>Completed 8-week certification in Pharma Analytical Instruments. Hands-on experience with GC, HPLC, UV/Vis, NMR, and Spectroscopy.</p>
+                        <div class="skill-artifact">
+                            <span class="artifact-label">Instruments Mastered:</span>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GC</span>
+                                <span class="skill-tag">HPLC</span>
+                                <span class="skill-tag">UV/Vis</span>
+                                <span class="skill-tag">NMR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-neo skill-mastery-card">
+                        <div class="skill-mastery-icon"><i class="bi bi-people"></i></div>
+                        <h4>Leadership &amp; Communication</h4>
+                        <p>12-week Strategy Management certification. Applied as Vice President of IIChE PDEU Student Chapter, leading 8 departments and 60+ members.</p>
+                        <div class="skill-artifact">
+                            <span class="artifact-label">Key Outcomes:</span>
+                            <ul>
+                                <li>Initiated CRA network across Gujarat</li>
+                                <li>Organized events with 100+ participants</li>
+                                <li>Represented chapter at national conferences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-neo skill-mastery-card">
+                        <div class="skill-mastery-icon"><i class="bi bi-pencil-square"></i></div>
+                        <h4>Research Writing &amp; Design Thinking</h4>
+                        <p>Skilled in technical report writing, academic posters, and sustainability/LCA documentation. Springer Nature Research Ambassador.</p>
+                        <div class="skill-artifact">
+                            <span class="artifact-label">Publications &amp; Outputs:</span>
+                            <ul>
+                                <li>Research posters on carbon capture</li>
+                                <li>Technical reports for industry internships</li>
+                                <li>Sustainability &amp; LCA documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborative & Leadership Experiences -->
+    <section id="leadership" class="section-padding">
+        <div class="container narrow-container">
+            <h2 class="section-title" data-aos="fade-up">Collaborative &amp; Leadership Experiences</h2>
+
+            <div class="card-neo" data-aos="fade-up">
+                <div class="leadership-role">
+                    <h4>Vice President — IIChE PDEU Student Chapter</h4>
+                    <p class="role-meta">Current Role</p>
+                </div>
+                <ul>
+                    <li><strong>Role:</strong> Leading 8 departments and 60+ members to enhance chapter visibility, engagement, and impact.</li>
+                    <li><strong>Team Dynamics:</strong> Coordinating cross-departmental collaboration, resolving scheduling conflicts, and mentoring junior members.</li>
+                    <li><strong>Achievement:</strong> Initiated the CRA network connecting student bodies across Gujarat.</li>
+                </ul>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="100">
+                <div class="leadership-role">
+                    <h4>Research Ambassador — Springer Nature</h4>
+                    <p class="role-meta">Selected among 100 ambassadors nationwide</p>
+                </div>
+                <ul>
+                    <li><strong>Role:</strong> Promoting research awareness and outreach across campus.</li>
+                    <li><strong>Contribution:</strong> Served on the Organizing Committee for the India Sustainability Conclave 2025 (GIFT City, Gandhinagar).</li>
+                </ul>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="200">
+                <div class="leadership-role">
+                    <h4>Class Representative — CH27 Batch</h4>
+                    <p class="role-meta">Academic Liaison</p>
+                </div>
+                <ul>
+                    <li><strong>Role:</strong> Liaison between faculty and students for communication and coordination.</li>
+                    <li><strong>Contribution:</strong> Organized doubt-solving sessions, peer study groups, and academic support initiatives.</li>
+                </ul>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="300">
+                <div class="leadership-role">
+                    <h4>National Hackathon Team Lead — Nirma University</h4>
+                    <p class="role-meta">1st Place Winner</p>
+                </div>
+                <ul>
+                    <li><strong>Role:</strong> Led and coordinated team strategy, task allocation, and final presentation.</li>
+                    <li><strong>Team Dynamics:</strong> Managed diverse skill sets under time pressure.</li>
+                    <li><strong>Achievement:</strong> Youngest team to secure 1st place among 20 nationally selected teams.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Awareness & Ethical Considerations -->
+    <section id="global" class="section-padding bg-surface">
+        <div class="container narrow-container">
+            <h2 class="section-title" data-aos="fade-up">Global Awareness &amp; Ethical Considerations</h2>
+
+            <div class="card-neo" data-aos="fade-up">
+                <h4>Carbon Capture &amp; Climate Responsibility</h4>
+                <p>My research on CO₂ capture using ionic liquids is directly motivated by the global climate crisis. The chemical engineering community has a responsibility to develop and deploy greener technologies. Through this work, I've grappled with questions about scalability and environmental footprint of new solvents.</p>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="100">
+                <h4>India Sustainability Conclave 2025</h4>
+                <p>As a member of the Organizing Committee at GIFT City, Gandhinagar, I engaged with global perspectives on sustainable development — from energy policy to environmental ethics and economic development.</p>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="200">
+                <h4>Personal Reflection</h4>
+                <p>I believe engineers carry a unique ethical obligation. Every process we design has downstream consequences for communities and ecosystems. My goal is to ensure that my work contributes to a more equitable and sustainable future. The Springer Nature Research Ambassador program has deepened my appreciation for open science and ethical research practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Aspirations -->
+    <section id="future" class="section-padding">
+        <div class="container narrow-container">
+            <h2 class="section-title" data-aos="fade-up">Future Aspirations &amp; Professional Development</h2>
+
+            <div class="card-neo" data-aos="fade-up">
+                <h4>Career Goals</h4>
+                <ul>
+                    <li>Pursue a Master's or PhD in Chemical/Environmental Engineering with a focus on sustainable process design and carbon capture.</li>
+                    <li>Work with leading research institutions or companies driving the energy transition.</li>
+                    <li>Build expertise at the intersection of engineering and management to lead R&amp;D teams.</li>
+                </ul>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="100">
+                <h4>Areas for Further Study</h4>
+                <ul>
+                    <li>Advanced process simulation and computational chemistry</li>
+                    <li>Life Cycle Assessment (LCA) and environmental impact modeling</li>
+                    <li>Data science applications in chemical engineering</li>
+                    <li>Innovation management and technology commercialization</li>
+                </ul>
+            </div>
+
+            <div class="card-neo" data-aos="fade-up" data-aos-delay="200">
+                <h4>Commitment to Lifelong Learning</h4>
+                <p>I am committed to continuous professional development through certifications, conferences, publications, and mentorship. My experience as a Springer Nature Research Ambassador and IIChE Vice President has reinforced the importance of staying connected to the broader scientific community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-surface">
+        <div class="container narrow-container text-center">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">I'd love to connect. Reach out via any of the channels below.</p>
+
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+                <a href="mailto:taleleyash1@gmail.com" class="contact-card card-neo">
+                    <i class="bi bi-envelope"></i>
+                    <h5>Email</h5>
+                    <p>taleleyash1@gmail.com</p>
+                </a>
+                <a href="tel:+917758945054" class="contact-card card-neo">
+                    <i class="bi bi-phone"></i>
+                    <h5>Phone</h5>
+                    <p>+91-7758945054</p>
+                </a>
+                <a href="https://linkedin.com/in/yashtalele" target="_blank" class="contact-card card-neo">
+                    <i class="bi bi-linkedin"></i>
+                    <h5>LinkedIn</h5>
+                    <p>Yash Talele</p>
+                </a>
+                <a href="https://github.com/yashtalele" target="_blank" class="contact-card card-neo">
+                    <i class="bi bi-github"></i>
+                    <h5>GitHub</h5>
+                    <p>yashtalele</p>
+                </a>
+                <a href="https://instagram.com/yashtalele" target="_blank" class="contact-card card-neo">
+                    <i class="bi bi-instagram"></i>
+                    <h5>Instagram</h5>
+                    <p>@yashtalele</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <p>&copy; 2026 Yash Talele. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#cover" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
